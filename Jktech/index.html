@@ -91,7 +91,7 @@ Combining creativity with technical expertise, I deliver designs that effectivel
                 <a href="https://github.com/Jairo-Tech12"><i class="bi bi-github"></i></a>
                 <a href="mailto:jairokibet81@gmail.com"><i class="bi bi-envelope"></i></a>
 
-              </div>
+              </div> 
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2">
@@ -267,6 +267,17 @@ $(function () {
       $("html, body").animate({ scrollTop: $(target).offset().top - 50 }, 600);
     });
   });
+  
+    const toggle = document.querySelector('.mobile-nav-toggle');
+    const navList = document.querySelector('.navmenu ul');
+
+    toggle.addEventListener('click', () => {
+      navList.classList.toggle('open');
+      toggle.classList.toggle('active');
+      toggle.classList.toggle('bi-list');
+      toggle.classList.toggle('bi-x'); // changes icon from menu to X
+    });
+  
 </script> 
 
 
